@@ -1,48 +1,19 @@
 # Cache Module
 
-Este módulo proporciona la implementación del sistema de caché para Flexi Framework.
+The Cache module provides PSR-16 cache adapters backed by files or in-memory storage. It binds `Flexi\Contracts\Interfaces\CacheInterface` and the `cache` service alias.
 
-## Características
+## Configuration
 
-- **Múltiples drivers**: Soporte para diferentes implementaciones de caché
-  - `FileCache`: Almacenamiento en sistema de archivos
-  - `InMemoryCache`: Almacenamiento en memoria (array)
-
-- **PSR-16 compatible**: Implementa la interfaz PSR Simple Cache
-- **Factory pattern**: Gestión centralizada de instancias de caché
-- **Configuración flexible**: Selección de driver a través de configuración
-
-## Uso
-
-El módulo se registra automáticamente a través de la configuración de servicios y proporciona:
-
-- `CubaDevOps\Flexi\Contracts\Interfaces\CacheInterface`: Interfaz principal
-- `cache`: Alias de servicio
-
-### Configuración
-
-En tu archivo de configuración `.env` o configuración, define:
+The factory reads `cache_driver` and `cache_dir` from Flexi configuration. Supported driver values are `file`, `array`, and `memory`; `array` and `memory` use the in-memory adapter. The default is file storage under the application cache directory.
 
 ```php
-'cache_driver' => 'file', // 'file', 'array', 'memory'
-'cache_dir' => '/path/to/cache', // Solo para driver 'file'
-```
-
-### Ejemplo de uso
-
-```php
-// Obtener instancia desde el contenedor
 $cache = $container->get('cache');
-
-// Operaciones básicas
 $cache->set('key', 'value', 3600);
-$value = $cache->get('key', 'default');
-$cache->delete('key');
-$cache->clear();
+$value = $cache->get('key', 'fallback');
 ```
 
-## Arquitectura
+The module requires PHP 7.4+, `flexi/contracts` `^5.2.1`, and Flexi Core `^3.2`. Install the Composer package and explicitly activate the `Cache` module.
 
-- **Domain**: Excepciones específicas del dominio de caché
-- **Infrastructure**: Implementaciones concretas y factory
-- **Tests**: Suite de pruebas unitarias
+## Tests
+
+Install the development dependencies with `composer install`, then run `vendor/bin/phpunit tests` from the module root.

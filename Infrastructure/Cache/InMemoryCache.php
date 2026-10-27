@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Cache\Infrastructure\Cache;
+namespace Flexi\Modules\Cache\Infrastructure\Cache;
 
-use CubaDevOps\Flexi\Contracts\Interfaces\CacheInterface;
-use CubaDevOps\Flexi\Modules\Cache\Domain\Exceptions\InvalidArgumentCacheException;
+use Flexi\Contracts\Interfaces\CacheInterface;
+use Flexi\Modules\Cache\Infrastructure\Exceptions\InvalidArgumentCacheException;
 
 class InMemoryCache implements CacheInterface
 {
