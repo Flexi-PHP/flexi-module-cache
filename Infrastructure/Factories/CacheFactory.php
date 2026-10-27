@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace CubaDevOps\Flexi\Modules\Cache\Infrastructure\Factories;
 
-use CubaDevOps\Flexi\Contracts\Classes\Traits\FileHandlerTrait;
-use CubaDevOps\Flexi\Contracts\Interfaces\CacheInterface;
-use CubaDevOps\Flexi\Contracts\Interfaces\ConfigurationInterface;
+use Flexi\Contracts\Classes\Traits\FileHandlerTrait;
+use Flexi\Contracts\Interfaces\CacheInterface;
+use Flexi\Contracts\Interfaces\ConfigurationInterface;
 use CubaDevOps\Flexi\Modules\Cache\Infrastructure\Cache\FileCache;
 use CubaDevOps\Flexi\Modules\Cache\Infrastructure\Cache\InMemoryCache;
 use Psr\Container\ContainerExceptionInterface;
