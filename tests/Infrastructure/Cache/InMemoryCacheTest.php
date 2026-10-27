@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Cache\Tests\Infrastructure\Cache;
+namespace Flexi\Modules\Cache\Tests\Infrastructure\Cache;
 
 use Flexi\Contracts\Interfaces\CacheInterface;
-use CubaDevOps\Flexi\Modules\Cache\Infrastructure\Exceptions\InvalidArgumentCacheException;
-use CubaDevOps\Flexi\Modules\Cache\Infrastructure\Cache\InMemoryCache;
+use Flexi\Modules\Cache\Infrastructure\Exceptions\InvalidArgumentCacheException;
+use Flexi\Modules\Cache\Infrastructure\Cache\InMemoryCache;
 use PHPUnit\Framework\TestCase;
 
 class InMemoryCacheTest extends TestCase

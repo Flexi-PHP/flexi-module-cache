@@ -1,7 +1,7 @@
 {
   "name": "cubadevops/flexi-module-cache",
   "description": "Cache module for Flexi Framework with File and InMemory implementations",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "flexi-module",
   "license": "MIT",
   "keywords": [
@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CubaDevOps\\Flexi\\Modules\\Cache\\": ""
+      "Flexi\\Modules\\Cache\\": ""
     }
   },
   "extra": {
@@ -51,7 +51,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "CubaDevOps\\Flexi\\Modules\\Cache\\Tests\\": "tests/"
+      "Flexi\\Modules\\Cache\\Tests\\": "tests/"
     }
   },
   "require-dev": {

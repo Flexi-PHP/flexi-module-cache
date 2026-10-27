@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Cache\Infrastructure\Cache;
+namespace Flexi\Modules\Cache\Infrastructure\Cache;
 
 use Flexi\Contracts\Interfaces\CacheInterface;
 use DateInterval;

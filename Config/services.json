@@ -3,7 +3,7 @@
     {
       "name": "Flexi\\Contracts\\Interfaces\\CacheInterface",
       "factory": {
-        "class": "CubaDevOps\\Flexi\\Modules\\Cache\\Infrastructure\\Factories\\CacheFactory",
+        "class": "Flexi\\Modules\\Cache\\Infrastructure\\Factories\\CacheFactory",
         "method": "createDefault",
         "arguments": [
           "@Flexi\\Contracts\\Interfaces\\ConfigurationInterface"
