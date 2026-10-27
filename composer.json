@@ -1,5 +1,5 @@
 {
-  "name": "cubadevops/flexi-module-cache",
+  "name": "flexi/flexi-module-cache",
   "description": "Cache module for Flexi Framework with File and InMemory implementations",
   "version": "2.0.0",
   "type": "flexi-module",
