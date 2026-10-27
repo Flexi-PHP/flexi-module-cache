@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Cache\Domain\Exceptions;
+namespace CubaDevOps\Flexi\Modules\Cache\Infrastructure\Exceptions;
 
 use Psr\SimpleCache\InvalidArgumentException;
 
